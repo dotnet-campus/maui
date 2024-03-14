@@ -121,7 +121,7 @@ namespace UITest.Appium
 			if (_app?.Driver is null)
 				return CommandResponse.FailedEmptyResponse;
 
-			if(_app.AppState != ApplicationState.NotRunning)
+			if (_app.AppState != ApplicationState.NotRunning)
 				_app.Driver.CloseApp();
 
 			return CommandResponse.SuccessEmptyResponse;
